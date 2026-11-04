@@ -24,6 +24,8 @@ public class Movie {
     @Column(nullable = false, length = 50)
     private String genre;
 
+    protected Movie() {}
+
     public Movie(MovieRequest request) {
         this.title = request.title();
         this.author = request.author();
