@@ -3,7 +3,7 @@ package org.example.assignment.assign09.entity;
 import jakarta.persistence.*;
 import org.example.assignment.assign09.dto.MovieRequest;
 
-@Entity(name = "movies")
+@Entity
 @Table(name = "movie_sql2")
 public class Movie {
     @Id
@@ -24,7 +24,7 @@ public class Movie {
     @Column(nullable = false, length = 50)
     private String genre;
 
-    protected Movie() {}
+protected Movie() {}
 
     public Movie(MovieRequest request) {
         this.title = request.title();
