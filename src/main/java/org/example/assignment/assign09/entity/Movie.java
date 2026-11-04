@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import org.example.assignment.assign09.dto.MovieRequest;
 
 @Entity(name = "movies")
-@Table(name = "movie_sql")
+@Table(name = "movie_sql2")
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
