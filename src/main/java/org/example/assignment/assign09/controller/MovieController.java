@@ -36,7 +36,7 @@ public class MovieController {
 
     @PutMapping("/{id}")
     public MovieResponse update(@PathVariable Long id, @RequestBody MovieRequest request) {
-        return  service.update(id, request);
+        return service.update(request, id);
     }
 
     @DeleteMapping("/{id}")

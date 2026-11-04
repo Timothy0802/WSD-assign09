@@ -31,7 +31,13 @@ public class Movie {
         this.releaseYear = request.releaseYear();
         this.genre = request.genre();
     }
-
+    public void update(MovieRequest request) {
+        this.title = request.title();
+        this.author = request.author();
+        this.price = request.price();
+        this.releaseYear = request.releaseYear();
+        this.genre = request.genre();
+    }
     public Long getId() {
         return id;
     }
